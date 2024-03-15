@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ilmiyatini Nurul Lathifah</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        min-height: 100vh;
+        background-color: #f0f0f0;
+      }
+
+      header,
+      footer {
+        grid-column: span 2;
+        text-align: center;
+        padding: 20px;
+        background-color: #3498db;
+        color: #fff;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        margin: 10px;
+      }
+
+      article,
+      aside {
+        padding: 20px;
+        border: 1px solid #ddd;
+        background-color: #cfeafc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+
+      article:hover,
+      aside:hover {
+        background-color: #3498db;
+        transform: scale(1.02);
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+      }
+
+      nav li {
+        margin-right: 15px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        font-size: 16px;
+        transition: color 0.3s ease;
+      }
+
+      nav a:hover {
+        color: #c6dfef;
+      }
+
+      aside img {
+        width: 20%;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        transition: width 0.3s ease;
+      }
+
+      aside img:hover {
+        width: 40%;
+      }
+
+      .dropdown-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 15px;
+        background-color: #89caf5;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      .dropdown-container:hover {
+        background-color: #03062e;
+        color: #fff;
+      }
+
+      .dropdown {
+        display: none;
+        transition: display 0.3s ease;
+      }
+
+      @media only screen and (max-width: 768px) {
+        body {
+          font-size: 10px;
+          padding: 10px;
+        }
+
+        main {
+          grid-template-columns: 1fr;
+        }
+
+        aside {
+          grid-row: span 2;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Welcome to my Website, Enjoy it!</h1>
+      <p>Exploring the world of music, mathematics, and more.</p>
+      <nav>
+        <ul>
+          <li><a href="#music">Music</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="#thesis">Thesis</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article id="music">
+        <h2>My Favorite Genre of Music is Jazz and Pop</h2>
+        <p>
+          Jazz and Pop music have always held a special place in my heart. The
+          soulful melodies and rhythmic beats of Jazz create an atmosphere that
+          resonates with my emotions. On the other hand, Pop music's catchy
+          tunes and relatable lyrics make it an enjoyable genre to listen to in
+          various moods.
+        </p>
+      </article>
+
+      <article>
+        <h2>My Favorite Artist is Shawn Mendes</h2>
+        <p>
+          Shawn Mendes is an artist whose music has had a profound impact on my
+          life. His heartfelt lyrics and soulful voice make his songs not only
+          enjoyable but also deeply meaningful. Whether it's a romantic ballad
+          or an upbeat anthem, Shawn Mendes' versatility as an artist never
+          fails to impress me.
+        </p>
+      </article>
+
+      <aside>
+        <img src="ilmi.jpg" alt="Ilmiyatini Nurul Lathifah - Foto Profil" />
+        <div id="about">
+          <h3>About Me</h3>
+          <p><strong>Name:</strong> Ilmiyatini Nurul Lathifah</p>
+          <p><strong>Age:</strong> 23</p>
+          <p><strong>GPA:</strong> 3.26 from 4.00</p>
+          <p><strong>Bachelors of Mathematics</strong></p>
+        </div>
+        <div id="interests">
+          <h3 class="dropdown-container">My Interests</h3>
+          <ul class="dropdown">
+            <li>Frontend Engineering</li>
+            <li>Mathematical Modeling</li>
+            <li>Financial Management</li>
+            <li>Leadership</li>
+            <li>Music and Art</li>
+          </ul>
+        </div>
+        <div id="thesis">
+          <h3>Thesis</h3>
+          <p>
+            I completed my Bachelor's degree in Mathematics at Gadjah Mada
+            University in 2023. My final project, titled "Mathematical
+            Investigation of Macrophage with Mixed Phenotype Towards Cancer: A
+            Case Study on Lung Cancer," delved into the realm of applied
+            mathematics. This research involved the application of mathematical
+            modeling to understand the behavior of macrophages in the context of
+            lung cancer, showcasing my ability to bridge theoretical knowledge
+            with practical problem-solving.
+          </p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <p>Contact me at:</p>
+      <p>email : ilmiyatini13@mail.ugm.ac.id</p>
+      <p>linkedIn : linkedin.com/in/ilmiyatininurullathifah/</p>
+      <p>Hak Cipta © 2024 Ilmiyatini Nurul Lathifah</p>
+    </footer>
+    <script>
+      const dropdown = document.querySelector(".dropdown");
+      dropdown.style.display = "none";
+      document
+        .getElementById("interests")
+        .addEventListener("click", function () {
+          if (dropdown.style.display === "none") {
+            dropdown.style.display = "block";
+          } else {
+            dropdown.style.display = "none";
+          }
+        });
+    </script>
+  </body>
+</html>
